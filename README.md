@@ -12,7 +12,15 @@ Only the Go standard library is used. Each row is rendered in a goroutine, where
 
 This image is rendered at 3840x2160 and takes around 2 seconds to render on my laptop.
 
-Go source code:
+### Mandelbulb
+
+![Mandelbulb](img/mandelbulb.png)
+
+This image is rendered at 3840x2160 and then scaled down to 1920x1080. It takes around 12 seconds to render on my laptop.
+
+## Source code
+
+### Mandelbrot
 
 ```go
 package main
@@ -86,12 +94,6 @@ func main() {
 ```
 
 ### Mandelbulb
-
-![Mandelbulb](img/mandelbulb.png)
-
-This image is rendered at 3840x2160 and then scaled down to 1920x1080. It takes around 12 seconds to render on my laptop.
-
-Go source code:
 
 ```go
 package main
