@@ -1,6 +1,6 @@
 # Mandel
 
-Two example Go programs that demonstrates the use of concurrency and goroutines for rendering a mandelbrot fractal and a slice of a mandelbulb fractal.
+Two short Go programs that demonstrates the use of concurrency and goroutines for rendering a mandelbrot fractal and a slice of a mandelbulb fractal.
 
 ## Screenshots
 
