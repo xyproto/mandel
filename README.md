@@ -4,11 +4,17 @@ Two example Go programs that demonstrates the use of concurrency and goroutines 
 
 ## Screenshots
 
+### Mandelbrot
+
 ![mandelbrot](img/mandelbrot.png)
+
+### Mandelbulb
 
 ![mandelbulb](img/mandelbulb.png)
 
 ## General info
 
-* GPT4 was used as an assistant.
-* Licensed under CC0.
+* Author: Alexander F. Rødseth
+* Assistant: GPT4
+* License: CC0
+* Version: 0.0.1
