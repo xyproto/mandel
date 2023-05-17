@@ -1,8 +1,8 @@
 # Mandel
 
-Two short Go programs that demonstrates the use of concurrency and go-routines for rendering a Mandelbrot fractal and a slice of a Mandelbulb fractal.
+Two short Go programs that demonstrates the use of concurrency and goroutines for rendering a Mandelbrot fractal and a slice of a Mandelbulb fractal.
 
-Only the Go standard library is used.
+Only the Go standard library is used. Each row is rendered in a goroutine, where the function is called with the `go` keyword. `sync.WaitGroup` is used to wait for the gorutines to complete.
 
 ## Screenshots
 
