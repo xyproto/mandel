@@ -1,3 +1,9 @@
 cmd/mandelbrot/mandelbrot
 cmd/mandelbulb/mandelbulb
 cmd/*/*.png
+*.bak
+*.tmp
+*.out
+*.log
+output.txt
+include.txt
