@@ -1,2 +1,3 @@
 cmd/mandelbrot/mandelbrot
 cmd/mandelbulb/mandelbulb
+cmd/*/*.png
