@@ -13,8 +13,8 @@ import (
 const (
 	width      = 3840
 	height     = 2160
-	xmin, ymin = -2, -2
-	xmax, ymax = 2, 2
+	xmin, ymin = -2, -1
+	xmax, ymax = 1, 1
 	maxIter    = 1000
 )
 
