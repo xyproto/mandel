@@ -8,9 +8,13 @@ Two example Go programs that demonstrates the use of concurrency and goroutines 
 
 ![mandelbrot](img/mandelbrot.png)
 
+[Go source code](cmd/mandelbrot/main.go)
+
 ### Mandelbulb
 
 ![mandelbulb](img/mandelbulb.png)
+
+[Go source code](cmd/mandelbulb/main.go)
 
 ## General info
 
