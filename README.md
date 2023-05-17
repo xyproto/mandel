@@ -135,13 +135,16 @@ func mandelbulb(p vec3) float64 {
         }
         theta, phi = math.Acos(z.z/r)*power, math.Atan2(z.y, z.x)*power
         r = math.Pow(r, power)
-        z.x, z.y, z.z = p.x+r*math.Sin(theta)*math.Cos(phi), p.y+r*math.Sin(theta)*math.Sin(phi), p.z+r*math.Cos(theta)
+        z.x = p.x + r*math.Sin(theta)*math.Cos(phi)
+        z.y = p.y + r*math.Sin(theta)*math.Sin(phi)
+        z.z = p.z + r*math.Cos(theta)
     }
     return r
 }
 
 func renderPixel(x, y int) color.Color {
-    px, py := (2*float64(x)/float64(ssWidth)-1)*aspectRatio*math.Tan(fov/2), (1-2*float64(y)/float64(ssHeight))*math.Tan(fov/2)
+    px := (2*float64(x)/float64(ssWidth) - 1) * aspectRatio * math.Tan(fov/2)
+    py := (1 - 2*float64(y)/float64(ssHeight)) * math.Tan(fov/2)
     direction := vec3{px, py, -1}.normalize()
     t := 0.0
     for i := 0; i < maxIter; i++ {
